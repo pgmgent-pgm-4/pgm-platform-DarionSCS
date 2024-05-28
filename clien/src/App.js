@@ -4,8 +4,7 @@ import "./App.css";
 //routes
 import { ROUTES } from "./routes/routes";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { ApolloProvider } from "@apollo/client";
-import client from "./apolloClient";
+
 
 // pages
 import Home from "./pages/Home";
@@ -21,7 +20,6 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <ApolloProvider client={client}>
       <Router>
         <Header />
         <Routes>
@@ -34,7 +32,6 @@ function App() {
         </Routes>
         <Footer />
       </Router>
-    </ApolloProvider>
   );
 }
 

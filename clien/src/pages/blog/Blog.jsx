@@ -1,21 +1,7 @@
 // src/components/Blog.js
 import React from "react";
-import { gql, useQuery } from "@apollo/client";
-
-// Correct GraphQL query
-const GET_BLOGITEMS_QUERY = gql`
-  query Assets {
-    blogItem {
-      imgBlog {
-        url
-      }
-      titleBlog
-      redirectBlog
-      descriptionBlog
-    }
-  }
-`;
-
+import GET_BLOGITEMS_QUERY from "../../graphQL/queries";
+import { useQuery } from "@apollo/client";
 // React component to fetch and display data
 function Blog() {
   const { loading, error, data } = useQuery(GET_BLOGITEMS_QUERY);

@@ -1,5 +1,6 @@
 import React from "react";
 
+
 // adjust later using real data
 export default function BlogCard() {
   return (
