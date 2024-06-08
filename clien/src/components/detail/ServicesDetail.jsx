@@ -1,7 +1,7 @@
 import React from "react";
 import { useQuery } from "@apollo/client";
 import { useParams } from "react-router-dom";
-import { GET_SERVICES_QUERY } from "../../graphQL/queries"; // Adjust the path as necessary
+import { GET_SERVICES_QUERY } from "../../graphQL/queries";
 
 export default function ServiceDetail() {
   const { id } = useParams();
