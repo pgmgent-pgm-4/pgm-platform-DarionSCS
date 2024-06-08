@@ -59,6 +59,7 @@ export default function Opleiding() {
           <a
             href="https://www.arteveldehogeschool.be/nl/opleidingen/graduaat/programmeren"
             className="text-blue-700 underline dark:text-blue-300"
+            target="_blank"
           >
             inschrijvingspagina
           </a>{" "}
