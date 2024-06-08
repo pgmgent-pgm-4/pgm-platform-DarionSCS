@@ -23,4 +23,8 @@ export const ROUTES = {
     path: "/team",
     title: "Team",
   },
+  opleiding: {
+    path: "/opleiding",
+    title: "Opleiding",
+  },
 };

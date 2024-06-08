@@ -1,9 +1,11 @@
 import React from "react";
+import DarkModeToggle from "./DarkModeToggle";
 
-function Footer() {
+function Footer({ darkMode, setDarkMode }) {
   return (
-    <footer>
-      <p>© 2023 PGM Platform. All rights reserved.</p>
+    <footer className="bg-gray-200 dark:bg-black text-center p-6 mt-8 rounded shadow-md">
+      <p>&copy; 2024 Arteveldehogeschool. Alle rechten voorbehouden.</p>
+      <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
     </footer>
   );
 }
